@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
     background-image: linear-gradient(90deg, #74a9d7, #e4a0d8, #cc99ee);
@@ -60,9 +61,6 @@ body {
 
 /* Main Hero Section Styles */
 .hero {
-    background-image: url('./Images/heroImg3.avif');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -74,13 +72,24 @@ body {
 .hero .intro {
     text-align: center;
     margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro img {
+    max-width: 50%;
+    height: auto;
+    max-height: 60vh;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
 .hero .intro-buttons {
     margin: 2rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .intro-buttons a {
     text-decoration: none;
@@ -210,7 +219,9 @@ body {
 .contact {
     padding: 0 5rem;
 }
-
+.contact-heading h1 {
+    margin: 2rem 0;
+}
 .contact-content {
     display: flex;
     margin: 3rem 0;
@@ -229,7 +240,7 @@ body {
 .contact-form .form-controls {
     width: 80%;
     padding: 10px 0;
-    margin: 1.67rem 0;
+    margin: 0.5rem 0;
 }
 
 .contact-form .form-btn {
