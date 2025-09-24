@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+    background-image: linear-gradient(90deg, #74a9d7, #e4a0d8, #cc99ee);
     background-color: transparent;
 }
 
@@ -82,12 +82,32 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+.intro-buttons a {
+    text-decoration: none;
+}
+.pink-btn {
+    background-color: pink;
+    border: 2px solid pink;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.pink-btn:hover {
+    background-color: white;
+    color: pink;
+    border: 2px solid pink;
+}
 
 /* About section styles */
 .about {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(45deg, #363D73, #2794B3);
+    background-image: linear-gradient(45deg, #9fcffa, #2794B3);
     justify-content: space-between;
     width: 100%;
 }
@@ -98,10 +118,21 @@ body {
     padding: 5rem 1rem 5rem 5rem;
 }
 
-.about .about-image img {
-    height: 400px;
-    width: 450px;
+.about .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5rem 5rem 5rem 1rem;
+}
+
+.about .about-image img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Portfolio section styles */
