@@ -60,6 +60,11 @@
         width: 35%;
     }
 
+    /* Adjust portfolio card height for tablet */
+    .port-card {
+        height: 320px;
+    }
+
 }
 
 
@@ -144,6 +149,15 @@
     .my-row .my-col {
         text-align: center;
         width: 100%;
+    }
+
+    /* Adjust portfolio card height for mobile */
+    .port-card {
+        height: 300px;
+    }
+
+    .port-card .image {
+        height: 180px;
     }
 
     .contact {
