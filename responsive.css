@@ -71,7 +71,13 @@
     .hero .intro-buttons {
         gap: 20px;
     }
-
+    .intro img {
+        max-width: 80%;
+        height: auto;
+        max-height: 60vh;
+        border-radius: 100%;
+        object-fit: cover;
+    }
     .btn {
         padding: 10px 30px;
     }
