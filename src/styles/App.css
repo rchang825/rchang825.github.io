@@ -1,26 +1,37 @@
 .app {
   text-align: center;
+  /* Center all content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .main {
-  background-color: #282c34;
+  background-color: #c5d3f0;
   padding: 20px;
   color: white;
   min-height: 100vh;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   border: 2px solid #ccc;
   border-radius: 10px;
-  padding: 20px;
   margin: 20px;
-  max-width: 300px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
 }
 .card img {
   width: 100%;
