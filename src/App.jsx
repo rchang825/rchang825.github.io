@@ -13,18 +13,21 @@ function App() {
     <div className="app">
       <Nav />
       <Header />
-      <div className="card-container projects" id="projects">
-      {projects.map((project, index) => (
-        <Card
-          key={index}
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          stack={project.stack}
-          role={project.role}
-          link={project.link}
-        />
-      ))}
+      <div className="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div className="card-container">
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              stack={project.stack}
+              role={project.role}
+              link={project.link}
+            />
+          ))}
+        </div>
       </div>
       <AboutMe />
       <Contact />

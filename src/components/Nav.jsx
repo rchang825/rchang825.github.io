@@ -3,7 +3,8 @@ import React from 'react';
 function Nav() {
   return (
     <nav className="nav">
-      <ul>
+      <div className="logo"><a href="/">Ruby Chang</a></div>
+      <ul className="nav-links">
         <li><a href="#projects">Portfolio</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>

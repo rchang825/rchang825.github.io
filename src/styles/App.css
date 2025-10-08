@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .app {
   text-align: center;
   /* Center all content */
@@ -5,19 +8,109 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(90deg, #74a9d7, #e4a0d8, #cc99ee);
+  background-color: transparent;
 }
 
-.main {
+.nav .logo {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav .nav-links {
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+.nav a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.header {
   background-color: #c5d3f0;
   color: white;
   min-height: 100vh;
-  display: flex;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.header-text {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  flex: 0 0 65%;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30%;
+}
+
+.header-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 100%;
+}
+.intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+.intro-buttons a {
+    text-decoration: none;
+}
+.pink-btn {
+    background-color: pink;
+    border: 2px solid pink;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.pink-btn:hover {
+    background-color: white;
+    color: pink;
+    border: 2px solid pink;
+}
+.about {
+  background-color: #c5d3f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
 .card-container {
@@ -71,4 +164,20 @@
   width: 40%;
   height: 40%;
   object-fit: contain;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about > div:first-child {
+  flex: 1;
+  max-width: 60%;
+}
+
+.about > div:last-child {
+  flex: 0 0 auto;
+  max-width: 35%;
 }
