@@ -32,24 +32,26 @@ function Card({ title, image, stack, role, link }) {
       onMouseLeave={handleMouseLeave}
       className="card-wrapper"
     >
-      <div className="card">
-        <div className="card-image-container">
-          <img src={image} alt={title} className="card-image" />
-          <animated.div
-            style={peekabooSpring}
-            className="peekaboo-overlay"
-          >
-            <img src='public/images/kitty-peek.png' alt="peeking cat" className="peekaboo-image" />
-          </animated.div>
+      <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+        <div className="card">
+          <div className="card-image-container">
+            <img src={image} alt={title} className="card-image" />
+            <animated.div
+              style={peekabooSpring}
+              className="peekaboo-overlay"
+            >
+              <img src='public/images/kitty-peek.png' alt="peeking cat" className="peekaboo-image" />
+            </animated.div>
+          </div>
+          <div className="card-content">
+            <h2>
+                {title}
+            </h2>
+            <p className="role">{role}</p>
+            <p>{stack.join(', ')}</p>
+          </div>
         </div>
-        <h2>
-          <a href={link} target="_blank">
-            {title}
-          </a>
-        </h2>
-        <p className="role">{role}</p>
-        <p>{stack.join(', ')}</p>
-      </div>
+      </a>
     </animated.div>
   );
 }
