@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 
-function Card({ title, image, stack, role, link }) {
+function Card({ title, image, stack, role, link, onClick }) {
   const [isHovered, setIsHovered] = useState(false);
 
   // peekaboo animation
@@ -32,8 +32,11 @@ function Card({ title, image, stack, role, link }) {
       onMouseLeave={handleMouseLeave}
       className="card-wrapper"
     >
-      <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-        <div className="card">
+      <div
+        className="card"
+        onClick={onClick}
+        style={{ cursor: 'pointer' }}
+      >
           <div className="card-image-container">
             <img src={image} alt={title} className="card-image" />
             <animated.div
@@ -51,7 +54,6 @@ function Card({ title, image, stack, role, link }) {
             <p>{stack.join(', ')}</p>
           </div>
         </div>
-      </a>
     </animated.div>
   );
 }

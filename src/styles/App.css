@@ -1,12 +1,5 @@
 :root {
-  /* --primary-color: #27456c;
-  --secondary-color: #e95c6c;
-  --accent-light-color: #f7a088;
-  --accent-color: #99bfd5;
-  --accent-dark-color: #27456c;
-  --light-color: #F6E6A7; */
-
-  --primary-color: #e97555;
+ --primary-color: #e97555;
   --secondary-color: #e54d5e;
   --accent-light-color: #99bfd5;
   --accent-dark-color: #428a42;
@@ -73,6 +66,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 .header-text {
   display: flex;
@@ -84,6 +78,7 @@ body {
 }
 
 .header-image {
+  padding-top: 80px; /* Add padding to account for fixed nav bar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,4 +201,199 @@ body {
 .about > div:last-child {
   flex: 0 0 auto;
   max-width: 35%;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 0;
+  max-width: 600px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 3px solid var(--accent-dark-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--accent-dark-color);
+  z-index: 1001;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-close:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.modal-image-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.modal-info {
+  padding: 20px;
+  color: var(--accent-dark-color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  margin: 0 0 8px 0;
+  color: var(--dark-color);
+  font-size: 22px;
+}
+
+.modal-role {
+  color: var(--accent-light-color);
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  font-size: 15px;
+}
+
+.modal-description {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  font-size: 15px;
+  flex: 1;
+}
+
+.modal-stack {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+}
+
+.modal-stack strong {
+  color: var(--accent-dark-color);
+}
+
+.modal-actions {
+  text-align: center;
+  margin-top: auto;
+}
+
+.modal-link-button {
+  background-color: var(--accent-light-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.modal-link-button:hover {
+  background-color: var(--accent-dark-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  color: var(--dark-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+  min-width: 250px;
+  justify-content: flex-start;
+}
+
+.contact-link-small {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+  min-width: 100px;
+  margin: 0 1rem;
+}
+
+.contact-link:hover, .contact-link-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--light-color);
+}
+
+.contact-link svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.contact-link span {
+  font-weight: 500;
 }

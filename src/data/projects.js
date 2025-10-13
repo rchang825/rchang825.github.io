@@ -11,7 +11,7 @@ const projects = [
     title: "Ratings & Reviews",
     image: "/images/ratings-and-reviews.jpeg",
     description: "Microservice that allows users to read and write reviews for products.",
-    stack: ["Node.js", "Express.js", "PostgreSQL"],
+    stack: ["Node.js", "Express.js", "PostgreSQL", "AWS EC2"],
     role: "Backend Engineer",
     link: "https://github.com/sdc2506-cache-me-if-you-can/ruby-reviews",
   },
