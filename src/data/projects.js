@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "PicknRoll",
-    image: "/images/picknroll.jpeg",
+    image: "./images/picknroll.jpeg",
     description: "A web application that allows users to create and join local pick-up sports games.",
     stack: ["React", "MongoDB", "Node.js", "Express"],
     role: "Frontend Developer",
@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: "Ratings & Reviews",
-    image: "/images/ratings-and-reviews.jpeg",
+    image: "./images/ratings-and-reviews.jpeg",
     description: "Microservice that allows users to read and write reviews for products.",
     stack: ["Node.js", "Express.js", "PostgreSQL", "AWS EC2"],
     role: "Backend Engineer",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Atelier",
-    image: "/images/atelier.jpeg",
+    image: "./images/atelier.jpeg",
     description: "E-commerce product detail page with questions and answers, ratings and reviews, and related products.",
     stack: ["React", "Node.js", "Express.js"],
     role: "Frontend Developer",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Icebox",
-    image: "/images/icebox.jpeg",
+    image: "./images/icebox.jpeg",
     description: "A web application that allows users to keep track of items in their fridge and grocery list. Supports recipe search based on fridge contents.",
     stack: ["React", "Node.js", "Express.js", "PostgreSQL"],
     role: "Full-stack Developer",
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: "Wishwelly",
-    image: "/images/wishwelly.png",
+    image: "./images/wishwelly.png",
     description: "Web application that allows users to create and share aggregated wishlists.",
     stack: ["React", "EJS", "Node.js", "Express.js", "MongoDB", "Puppeteer"],
     role: "Full-stack Developer",
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "Grind75 Solutions",
-    image: "/images/leetcode.png",
+    image: "./images/leetcode.png",
     description: "Solutions to LeetCode problems specified in Grind75.",
     stack: ["JavaScript",],
     role: "Algorithm Enthusiast",

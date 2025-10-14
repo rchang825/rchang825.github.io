@@ -19,7 +19,7 @@ function AboutMe() {
         </p>
       </div>
       <div>
-        <img src="/images/renfair.jpeg" alt="Ruby at Ren Fair" />
+        <img src="./images/renfair.jpeg" alt="Ruby at Ren Fair" />
       </div>
     </div>
   );
