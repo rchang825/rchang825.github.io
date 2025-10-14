@@ -13,7 +13,7 @@ function Header() {
         </div>
       </div>
       <div className="header-image">
-        <img src="/public/images/ruby.jpeg" alt="Ruby Chang profile"/>
+        <img src="/images/ruby.jpeg" alt="Ruby Chang profile"/>
         <div className="intro-buttons">
             <a href="https://github.com/rchang825" target="_blank" rel="noopener noreferrer" className="contact-link-small">
               <FaGithub size={24} />

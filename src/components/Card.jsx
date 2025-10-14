@@ -43,7 +43,7 @@ function Card({ title, image, stack, role, link, onClick }) {
               style={peekabooSpring}
               className="peekaboo-overlay"
             >
-              <img src='public/images/kitty-peek.png' alt="peeking cat" className="peekaboo-image" />
+              <img src='/images/kitty-peek.png' alt="peeking cat" className="peekaboo-image" />
             </animated.div>
           </div>
           <div className="card-content">
