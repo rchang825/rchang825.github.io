@@ -1,7 +1,7 @@
 {
   "name": "cat-portfolio",
   "version": "0.1.0",
-  "homepage": "https://rchang825.github.io/cat-portfolio",
+  "homepage": "https://rchang825.github.io",
   "private": true,
   "type": "module",
   "scripts": {
