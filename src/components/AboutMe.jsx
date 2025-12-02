@@ -18,7 +18,7 @@ function AboutMe() {
             When I'm not programming in front of a computer, I may still be in front of a screen gaming, or reading with my cats stepping on me every 30 minutes to remind me to blink. I also love to cook, bake, and crochet.
         </p>
       </div>
-      <div>
+      <div className="about-image">
         <img src="./images/renfair.jpeg" alt="Ruby at Ren Fair" />
       </div>
     </div>
