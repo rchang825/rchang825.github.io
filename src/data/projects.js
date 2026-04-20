@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Grind75 Solutions",
     image: "./images/leetcode.png",
-    description: "Solutions to LeetCode problems specified in Grind75.",
+    description: "Solutions to LeetCode problems specified in Grind75 and beyond.",
     stack: ["JavaScript",],
     role: "Algorithm Enthusiast",
     link: "https://github.com/rchang825/leetcode",
